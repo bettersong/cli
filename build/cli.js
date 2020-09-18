@@ -16,7 +16,7 @@ function buildtask(action){
 
     const cmd = cmds.join("&&")
     const res = shell.exec(cmd)
-    
+
     console.log(`[buildTask]  ${res.code==0?'success':'error'}`)
 
     res.code==0?shell.echo(`${action}: 成功😊～`):shell.echo(`${action}: 失败😭...`)
