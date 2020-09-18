@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node ./cli/cli.js start",
-    "build": "node ./cli/cli.js build",
-    "lint": "node ./cli/cli.js lint"
+    "start": "node ./build/cli.js start",
+    "build": "node ./build/cli.js build",
+    "lint": "node ./build/cli.js lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
