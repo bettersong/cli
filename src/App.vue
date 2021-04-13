@@ -1,15 +1,20 @@
 <template>
-  <div id="app">
-    HelloWorld
-  </div>
+  <router-view />
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-}
+  name: "App",
+};
 </script>
 
-<style>
+<style lang="less">
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  width: 100%;
+}
 </style>
