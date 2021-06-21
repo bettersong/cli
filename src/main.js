@@ -16,6 +16,7 @@ Vue.config.productionTip = false;
 const router = new VueRouter({
   routes,
 });
+
 Vue.use(VueRouter);
 Vue.use(Calendar);
 Vue.use(Button);
@@ -25,7 +26,11 @@ Vue.use(Dropdown);
 Vue.use(DropdownMenu);
 Vue.use(DropdownItem);
 // Vue.use(MessageBox);
-console.log("ssss");
+const originalPush = VueRouter.prototype.push;
+
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch((err) => err);
+};
 new Vue({
   router,
   render: (h) => h(App),

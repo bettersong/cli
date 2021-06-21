@@ -13,9 +13,8 @@
         :color="activity.color"
         :size="activity.size"
         :timestamp="activity.timestamp"
-        @click="toDoAction"
       >
-        {{ activity.content }}
+        <span @click="toDoAction">{{ activity.content }}</span>
       </el-timeline-item>
     </el-timeline>
   </div>
@@ -62,7 +61,7 @@ export default {
 <style lang="less">
 .records {
   width: 28%;
-  min-width: 300px;
+  // min-width: 300px;
   //   height: 94%;
   //   padding: 30px 0;
   border-radius: 10px;

@@ -116,7 +116,7 @@ header {
 }
 .calendarBox {
   width: 70%;
-  min-width: 800px;
+  // min-width: 800px;
   height: 100%;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
